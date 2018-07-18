@@ -1,3 +1,38 @@
+Cara Clone Menjalankan Project Laravel
+
+- Buka project laravel yang akan kita clone dari github.
+- Download saja langsung file ZIP-nya, atau bisa anda clone langsung pada komputer anda melalui syntax github seperti ini,
+
+“git clone https://github.com/perdianto27/laraadmin.git”
+
+- Jika sudah di download silahkan unzip atau unrar dan tempatkan pada url yang dapat diakses nantinya, sehingga file project laravel yang sudah di download atau di clone.
+- Pada saat anda buka url project laravel tersebut akan muncul error. Untuk memperbaikinya lakukan langkah ini :
+
+“Composer dumpautoload”
+“Composer update –no-scripts”
+
+- Jika sudah "OK" buka kembali url project laravelnya, jika muncul error.
+- Mensetting database-nya.
+- Jika project laravel menggunakan env, Maka pengaturan database diletakkan pada file .env, jika tidak ada file .env maka copy saja file .env.example, ubah namanya menjadi .env
+- Isi database dengan nama database, username dengan username akses database, dan password dengan password akses database anda pada phpmyadmin.
+- Jika project laravel tidak menggunakan env, maka langsung ubah saja file database.php pada path config.
+- Isi database dengan nama database, username dengan username akses database, dan password dengan password akses database anda pada phpmyadmin.
+- Kemudian buka url project pada terminal dan lakukan migrate
+
+"php artisan migrate" 
+- Jika muncul error, berarti setting database anda masih salah,
+-Buka kembali url project anda pada browser, jika muncul error seperti ini,
+
+"No supported encrypter found. The cipher and / or key length are invalid."
+
+- Berarti key laravel anda salah untuk memperbaikinya tinggal di
+
+"php artisan key:generate"
+
+- Buka kembali url project anda pada browser, maka akan tampak tampilan project anda.
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
