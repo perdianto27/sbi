@@ -8,7 +8,7 @@ Cara Clone Menjalankan Project Laravel
 - Jika sudah di download silahkan unzip atau unrar dan tempatkan pada url yang dapat diakses nantinya, sehingga file project laravel yang sudah di download atau di clone.
 - Pada saat anda buka url project laravel tersebut akan muncul error. Untuk memperbaikinya lakukan langkah ini :
 
-“Composer dumpautoload”
+“Composer dumpautoload” kemudian,
 “Composer update –no-scripts”
 
 - Jika sudah "OK" buka kembali url project laravelnya, jika muncul error.
